@@ -31,10 +31,13 @@ public class Table
 
         t.hitDealer();
        
+        while(t.total < 21)
+        {
         if(t.decision.equals("hit"))
         {
             t.hit();
            
+        }
         }
         
         if(t.decision.equals("stay"))
