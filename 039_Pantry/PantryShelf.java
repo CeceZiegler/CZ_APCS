@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner6;
+
 public class PantryShelf
 {
     //I have declared these objects and variables in the class so they can be accessed throughout the program.
@@ -38,34 +40,59 @@ public class PantryShelf
             System.out.println("There are " + loafOfBread.getAmmount() + " slices of bread left. How many would you like to eat? ");
             total = scan.nextInt();
             loafOfBread.setAmmount(total);
+            System.out.println("I want to eat " + total +  " slices of bread");
+            for(int i = total ; i > 0; i--)
+            {
+                System.out.println("I'm eating " + i + " slices of bread ");
+            }
             System.out.println("You ate " + total + " slices of bread. There are " + loafOfBread.getAmmount() + " slices of bread left.");
         }
 
         //This if statement is for if they choose cookies as their snack.
-        if(snack.equals(cookies.getType()))
+        else if(snack.equals(cookies.getType()))
         {
             System.out.println("There are " + cookies.getAmmount() + " cookies left. How many would you like to eat? ");
             total = scan.nextInt();
             cookies.setAmmount(total);
+            System.out.println("I want to eat " + total + " cookies.");
+            for(int i = total; i > 0; i--)
+            {
+                System.out.println("I'm eating " + i + " cookies ");
+            }
             System.out.println("You ate " + total + " cookies. There are " + cookies.getAmmount() + " cookies left.");
         }
 
         //This if statement is for if the user chooses to eat soup.
-        if(snack.equals(soup.getType()))
+        else if(snack.equals(soup.getType()))
         {
             System.out.println("There are " + soup.getAmmount() + " cans of soup left. How many would you like to eat? ");
             total = scan.nextInt();
             soup.setAmmount(total);
+            System.out.println("I want to eat " + total + " cans of soup.");
+            for(int i = total; i > 0; i--)
+            {
+                System.out.println("I'm eating " + i + " cans of soup ");
+            }
             System.out.println("You ate " + total + " cans of soup. There are " + soup.getAmmount() + " cans of soup left.");
         }
         
         //This if statement is for if the user wants to eat gronola bars.
-        if(snack.equals(gronolaBars.getType()))
+        else if(snack.equals(gronolaBars.getType()))
         {
             System.out.println("There are " + gronolaBars.getAmmount() + " gronola bars left. How many would you like to eat? ");
             total = scan.nextInt();
             gronolaBars.setAmmount(total);
+            System.out.println("I want to eat " + total + " gronola bars.");
+            for(int i = total; i > 0; i--)
+            {
+                System.out.println("I'm eating " + i + " gronola bars");
+            }
+            
             System.out.println("You ate " + total + " gronola bars. There are " + gronolaBars.getAmmount() + " gronola bars left.");
+        }
+        else
+        {
+            System.out.println("Sorry, that item isnt in the pantry.");
         }
     }
 }
