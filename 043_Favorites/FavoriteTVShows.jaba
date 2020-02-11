@@ -1,0 +1,4 @@
+public class FavoriteTVShows
+{
+    String[] favTVShows = {"Survivor", "This is us", "Americas Got Talent"};
+}
