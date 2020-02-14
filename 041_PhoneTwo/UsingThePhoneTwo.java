@@ -18,8 +18,8 @@ public class UsingThePhoneTwo
     public void printPhone()
     {
         //This method calls the methods in the phone class to print out all of the brand names, models, ect entered in the constructor.
-        System.out.println(pOne.getBrandName() + " " + pOne.getModelName() + " " + pOne.getStorageSpace() + " lightning charger? " + pOne.getLightningCharger());
-        System.out.println(pTwo.getBrandName() + " " + pTwo.getModelName() + " " + pTwo.getStorageSpace() + " lightning charger? " + pTwo.getLightningCharger() + " " + pTwo.getColor());
-        System.out.println(pThree.getBrandName() + " " + pThree.getModelName() + " " + pThree.getStorageSpace() + " lightning charger? " + pThree.getLightningCharger() + " facial recognition? " + pThree.getFacialRecognition());
+        System.out.println(pOne);
+        System.out.println(pTwo);
+        System.out.println(pThree);
     }
 }

@@ -73,6 +73,10 @@ public class Phone
         return setColor;
     }
 
+    public String toString()
+    {
+        return "This phone is an " + brandName +  " " + setColor + " " +  modelName + " " + storageSpace + " " +  lightningCharger + " " + facialRecognition;
+    }
     public static void main(String[] args)
     {}
 
