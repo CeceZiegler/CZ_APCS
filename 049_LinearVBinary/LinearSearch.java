@@ -6,6 +6,8 @@ public class LinearSearch
     int[] x = ot.getSortedArray();
     //declaring a variable that will be in the paramater of the method I create. It is the number to look for in the array.
     int find;
+    //The counter variable will be used to count the number of iterations it takes to find each number in the array.
+    int counter = 0;
     
     //Creating the method to find a number with paramaters to enter an array, and the number to look for.
     public int search(int[] x, int find)
@@ -20,8 +22,12 @@ public class LinearSearch
             {
                 //Printing out the location of the found number.
                 System.out.println("The number " + find + " was found at index " + (i));
+                //Printing out the number of iterations to find the target number.
+                System.out.println("It took " + counter + " iterations to find the number " + find);
+                break;
             }
-            
+            //The counter will add one each time the loop runs through.
+           counter++; 
         }
         //If the number is not found in the array, -1 will be returned because that is not a possible index for the number.
         return -1;
